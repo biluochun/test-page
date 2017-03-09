@@ -38,8 +38,9 @@
         </style>
         <script>
             window.onload = function () {
-                document.body.addEventListener('touchstart', function () {
-                 if (document.body.scrollTop === 0) document.body.scrollTop = 1;
+                var body = document.getElementById('body');
+                body.addEventListener('touchstart', function () {
+                 if (body.scrollTop === 0) document.body.scrollTop = 1;
                 });
             };
         </script>
