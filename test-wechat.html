@@ -36,6 +36,11 @@
             pointer-events: none;
         }
         </style>
+        <script>
+        document.body.addEventListener('touchstart', function () {
+         if (document.body.scrollTop === 0) document.body.scrollTop = 1;
+        })
+        </script>
     </head>
     <body>
         <div id="mark">
